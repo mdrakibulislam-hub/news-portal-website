@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>News Portal</title>
+  </head>
+  <body style="box-sizing: border-box" onload="fetchFromApi()">
+    <!-- header section starts here -->
+    <header>
+      <section class="w-full max-w-7xl mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <a class="normal-case text-xl flex items-center justify-center"
+              ><span class="bg-blue-700 text-white p-2 rounded-md mr-1"
+                >News</span
+              >
+              <span>Portal</span></a
+            >
+          </div>
+          <div class="flex-none gap-2">
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Search"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img src="https://picsum.photos/200" />
+                </div>
+              </label>
+              <ul
+                tabindex="0"
+                class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a class="justify-between">
+                    Profile
+                    <span class="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- header section ends here -->
+
+    <!-- categories section starts here -->
+    <section
+      class="w-full max-w-7xl mx-auto flex flex-wrap justify-between bg-blue-400 rounded-md"
+      id="categories-container"
+    >
+      <!-- <a class="p-4 btn btn-ghost" href="">Categories</a> -->
+    </section>
+    <!-- categories section ends here -->
+
+    <!-- alert section starts here -->
+    <section
+      class="w-full max-w-7xl mx-auto mt-4"
+      id="alert-container"
+    ></section>
+    <!-- alert section ends here -->
+
+    <!-- filter section starts here -->
+    <section
+      class="w-full max-w-7xl mx-auto flex justify-between items-center p-4"
+    >
+      <div class="left-side-div flex items-center gap-4 w-1/2">
+        <p>Sort By View:</p>
+        <select class="select select-bordered w-full max-w-xs">
+          <option selected>Who shot first?</option>
+          <option>Han Solo</option>
+          <option>Greedo</option>
+        </select>
+      </div>
+
+      <div class="right-side-div flex gap-3">
+        <button class="btn btn-primary">Button</button>
+        <button class="btn btn-ghost border border-slate-400">Button</button>
+      </div>
+    </section>
+    <!-- filter section ends here -->
+
+    <!-- cards section  starts here -->
+    <section class="w-full max-w-7xl mx-auto" id="news-card-section">
+      <!-- <div class="card lg:card-side bg-base-100 border my-3">
+        <figure class="p-4">
+          <img class="rounded-lg" src="https://picsum.photos/200" alt="Album" />
+        </figure>
+        <div class="card-body flex flex-col justify-between">
+          <div class="card-upper-section">
+            <h2 class="card-title">New album is released!</h2>
+            <p>Click the button to listen on Spotiwhy app.</p>
+          </div>
+          <div class="card-lower-section flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <img
+                class="w-10 rounded-full"
+                src="https://picsum.photos/200"
+                alt=""
+              />
+              <div>
+                <h3 class="font-semibold">Autor</h3>
+                <p>Publishing Date</p>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-bold">1.5M Views</h3>
+            </div>
+            <div>
+              <h3
+                class="btn border-none bg-green-700 text-white px-4 py-2 rounded-md"
+              >
+                Details
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <!-- cards section  ends here -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
